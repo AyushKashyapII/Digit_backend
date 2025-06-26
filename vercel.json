@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/predict",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/main.py"
+    }
+  ]
+}
